@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://eks.my1.ru/index.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/about.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/contact.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/copyright.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/rules.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/search.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/software/index.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/software/000001.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/software/000002.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/software/000003.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/software/000004.html</loc>
+</url>
+</urlset>
