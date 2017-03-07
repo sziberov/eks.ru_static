@@ -166,13 +166,23 @@ q			{ /*font-style: italic;*/ quotes: '«' '»'; }
 	border-radius: 3px;
 	padding: 5px 20px 6px;
 	box-sizing: border-box;
-	height: 31px;
+	height: 33px;
 	margin: 0;
 	cursor: pointer;
+	
+	-webkit-transition: all 255ms ease;
+	-moz-transition: 	all 255ms ease;
+	-ms-transition: 	all 255ms ease;
+	-o-transition: 		all 255ms ease;
+	transition: 		all 255ms ease;
 }
 
-input[type="text"].ex {float:left;box-sizing:border-box;height:31px;margin:0;border-radius:3px 0 0 3px;border:1px solid #a9a9a9;border-right:0 none;padding-left:5px;width: 259px;}
-input[type="text"].ex {background-color: #ebebeb;}
+button.ex:hover {
+	opacity: .8;
+}
+
+input[type="text"].ex {float:left;box-sizing:border-box;height:33px;margin:0;border-radius:3px 0 0 3px;border:1px solid #a9a9a9;border-right:0 none;padding-left:5px;padding-right:5px;width: 238px;}
+input[type="text"].ex:disabled {background-color: #ebebeb;}
 .link_body {width:350px;float:right;margin-bottom:20px;}
 .link_body div {float:none;padding-bottom:25px;overflow:auto;}
 .link_body div b {display:block;clear:both;text-align:left;font-size:14px;color:#474e51;padding-bottom:1px;}
@@ -217,29 +227,29 @@ body > table {
 	position: absolute;
 	top: -4px;
 	right: 0;
-	background: url(../i/search-red.png) -142px 0px no-repeat;
+	background: url(../i/search-yellow.png) -142px 0px no-repeat;
 }
 .mail-howto div {
 	display: none;
 }
 .mail-howto:hover {
-	background: url(../i/search-red.png) -174px 0px no-repeat;
+	background: url(../i/search-yellow.png) -174px 0px no-repeat;
 	cursor: pointer;
 }
 .mail-howto:hover div {
 	position: absolute;
 	display: block;
-	font-size: 13px;
+	font-size: 12px /*13px*/;
 	font-style: normal;
 	color: #fff;
 	text-align: center;
 	width: 138px;
 	height: 34px;
-	background: url(../i/search-red.png) 0px -24px no-repeat;
+	background: url(../i/search-yellow.png) 0px -24px no-repeat;
 	left: -54px;
 	top: -40px;
 	box-sizing: border-box;
-	padding-top: 4px;
+	padding-top: 5px /*4px*/;
 }
 
 .mail-howto-bg {
@@ -272,7 +282,7 @@ body > table {
 	cursor: pointer;
 	height: 20px;
 	display: block;
-	background: url(../i/search-red.png) 0px 0px no-repeat;
+	background: url(../i/search-yellow.png) 0px 0px no-repeat;
 }
 
 #news {

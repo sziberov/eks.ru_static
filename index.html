@@ -6,13 +6,15 @@
 <link href="./css/index.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/express_send.css">
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-<meta name="robots" content="noarchive">
+<meta name="robots" content="nofollow">
 
 <meta http-equiv="content-language" content="ru">
 <script src="./js/domainTitle.js" charset="utf-8" type="text/javascript"></script>
 <script src="./js/main.js" charset="utf-8" type="text/javascript"></script>
 <script src="./js/request.js" charset="utf-8" type="text/javascript"></script>
 <script src="./js/jquery-3.1.1.min.js" charset="utf-8" type="text/javascript"></script>
+<script src="./js/fox_express.js"></script>
+<script src="./js/getNumber.js" charset="utf-8" type="text/javascript"></script>
 <script type="text/javascript">
 if (window.top != window.self) window.top.location = window.self.location;
 </script>
@@ -35,6 +37,8 @@ document.write('<div id="fox_header">');
 </script>
 </td></tr>
 <tr><td valign="top" style="padding: 16px;" id="body_element">
+
+<div class="note_wr" id="fox_note"><div class="note_bl"></div></div>				
 
 <center style="margin: -16px -16px;">
 
@@ -60,23 +64,29 @@ document.write('<div id="fox_header">');
 		</div>
 	</div>
 </div>
+
+
 <div class="fox_wrap_top">
     <div class="fox_wrap clearfix">
         <div class="fox_col1">
         	<div class="fox_h">Экспресс-начальная настройка ОС</div>
         	<div class="fox_desc">
-        		Чтобы скачать необходимое ПО, после переустановки операционной системы,<br> больше не нужно искать его по разным сайтам. Достаточно зайти на EKS.RU и перейти в<br> раздел <q>Программы</q>, где Вы найдете почти - если не все, что Вам нужно.
+        		Чтобы скачать самое необходимое ПО, после переустановки операционной системы,<br> больше не нужно искать его по разным ресурсам. Достаточно зайти на EKS.RU и перейти в<br> раздел <q>Программы</q>, где Вы найдете почти - если не все, что Вам нужно.<p></p><p></p>
 			</div>
         </div>
+
+        <!-- / -->
+
         <div class="fox_col2">
-        	<div class="fox_h">Экспресс-поиск<i class="mail-howto"><div>Поиск невозможен</div></i></div>
-        	<div class="fox_desc">
+        	<div class="fox_h">Экспресс-переход к объекту<i class="mail-howto"><div>Альтернатива поиску</div></i></div>
+        	<div class="fox_desc">Если вам известен номер объекта, вы можете перейти к нему заполнив поле ниже.</div>
+			
 			<div style="overflow: visible; float: right;">
-				<form method="post" action="http://www.ex.ua/storage">
-					<input type="text" disabled name="key" value="" class="ex" autocomplete="off">
-					<input type="submit" disabled value="найти" class="button ex" style="border-radius:0 3px 3px 0; float: left; color: inherit; cursor: default; width: 76px;">
-				</form>
-			</div></div>
+				<input id="key" type="text" value="" class="ex" autocomplete="off" placeholder="123456" maxlength="6" style="text-align:right">
+				<button id="getButton" onclick="getNumber()" class="button ex" style="border-radius:0 3px 3px 0; float: left; width: 97px;">получить</button>
+			</div>
+			<span id="fox_err_1">Не введен номер объекта</span>
+			<span id="fox_err_2">Такого объекта не существует</span>
         </div>
     </div>
 </div>

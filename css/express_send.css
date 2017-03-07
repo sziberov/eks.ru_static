@@ -68,7 +68,7 @@
 }
 
 .fox_col1, .fox_col2 {
-	min-height: 132px;
+	min-height: 162px;
 	padding-top: 25px;
 	padding-bottom: 25px;
     float: left;
@@ -166,7 +166,38 @@ button.fox_btn {
 	transition: 		all 255ms ease;
 }
 
-button.fox_btn:hover {
+input.fox_btn {
+	border: 1px solid #acacac;
+	color: #000;
+	font-size: 13px;
+	line-height: 0;
+	border-radius: 3px;
+	padding: 5px 20px 6px;
+	box-sizing: border-box;
+	height: 33px;
+	margin: 0;
+	cursor: pointer;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+
+	background: -webkit-linear-gradient(top, #f6f6f6, #dedede), -webkit-linear-gradient(#a4a4a4, #a4a4a4);
+	background: -moz-linear-gradient(top, #f6f6f6, #dedede), -moz-linear-gradient(#a4a4a4, #a4a4a4);
+	background: -ms-linear-gradient(top, #f6f6f6, #dedede), -ms-linear-gradient(#a4a4a4, #a4a4a4);
+	background: -o-linear-gradient(top, #f6f6f6, #dedede), -o-linear-gradient(#a4a4a4, #a4a4a4);
+	background: linear-gradient(top, #f6f6f6, #dedede), linear-gradient(#a4a4a4, #a4a4a4);
+	background-color: #f6f6f6;
+
+	-webkit-transition: all 255ms ease;
+	-moz-transition: 	all 255ms ease;
+	-ms-transition: 	all 255ms ease;
+	-o-transition: 		all 255ms ease;
+	transition: 		all 255ms ease;
+}
+
+button.fox_btn:hover, input.fox_btn:hover {
 	opacity: .8;
 }
 
@@ -277,8 +308,12 @@ button.fox_btn:hover {
 	outline: red;
 }
 
-#fox_err_reg, #fox_err_send {
+#fox_err_reg, #fox_err_send, #fox_err_1, #fox_err_2 {
 	color: red;
+}
+
+#fox_err_1, #fox_err_2 {
+	display: none;
 }
 
 .input_valid {

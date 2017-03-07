@@ -5,9 +5,10 @@
 <title>Lightshot 5.4.0.1</title>
 <link href="../css/index.css" type="text/css" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-<meta name="robots" content="noarchive">
+<meta name="robots" content="nofollow">
 
 <meta http-equiv="content-language" content="ru">
+<div id="domain-software"></div>
 <script src="../js/domainTitle.js" charset="utf-8" type="text/javascript"></script>
 <script src="../js/request.js" charset="utf-8" type="text/javascript"></script>
 <script src="../js/swfobject.js"></script>
@@ -53,7 +54,7 @@ document.write('<div id="fox_header">');
 <div class="note_wr" id="fox_note"><div class="notify_bl">Ссылка скопирована в буфер обмена!</div></div>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top">
-<img alt="Lightshot 5.4.0.1" src="./000002/logo-landing.png" id="poster" style="margin: 0 16px 8px 0;" title="Lightshot 5.4.0.1" align="left" border="0" height="127" width="409">
+<img alt="Lightshot 5.4.0.1" src="../get/000002/logo-landing.png" id="poster" style="margin: 0 16px 8px 0;" title="Lightshot 5.4.0.1" align="left" border="0" height="127" width="409">
 <h1>Lightshot 5.4.0.1</h1><br>
 <small>13 февраля 2017<span class="modify_time">, не редактировалось <!--<script src="../js/lastmodified.js">--></span></small>
 <p>
@@ -92,7 +93,7 @@ Lightshot — бесплатная и очень простая программ
 
 <div id="viewer" style="visibility: hidden; position: fixed; width: 320px; height: 260px; right: 16px; top: 32px; border: 1px solid rgb(68, 68, 68); background-color: rgb(221, 221, 221); z-index: 7;" onmousedown='dragStart(event, "viewer");' onclick="if (!drag_count) view_next();">
 <button style="position: absolute; width: 16px; height: 16px; right: 2px; top: 2px; margin-top: 2px; margin-right: 4px;" title="Закрыть окно" onclick="view_close(event);"></button>
-<center><img src="./000002/screenshot.jpg" id="viewer_img" height="706" width="1061"></center>
+<center><img id="viewer_img"></center>
 </div>
 
 <table id="file_list" class="list" style="padding-top: 8px" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -117,7 +118,7 @@ Lightshot — бесплатная и очень простая программ
 		</p>
 		<p>
 		<span class="r_button_small">
-			<a class="file_link" rel="nofollow">загрузить</a>
+			<a class="file_link" rel="nofollow" download>загрузить</a>
 		</span>
 		<span class="r_button_small">
 			<script>
@@ -126,7 +127,7 @@ Lightshot — бесплатная и очень простая программ
 		</span>
 		</p>
 		<script>
-			var url = "./000002/logo-landing.png";
+			var url = "../get/000002/logo-landing.png";
 			var file_name = url.split('/').pop().split('#')[0].split('?')[0];
 			var extension = url.substr((url.lastIndexOf('.') +1));
 			var getAbsoluteUrl = function(url) {
@@ -173,7 +174,7 @@ Lightshot — бесплатная и очень простая программ
 		</p>
 		<p>
 		<span class="r_button_small">
-			<a class="file_link" rel="nofollow">загрузить</a>
+			<a class="file_link" rel="nofollow" download>загрузить</a>
 		</span>
 		<span class="r_button_small">
 			<script>
@@ -182,7 +183,7 @@ Lightshot — бесплатная и очень простая программ
 		</span>
 		</p>
 		<script>
-			var url = "./000002/screenshot.jpg";
+			var url = "../get/000002/screenshot.jpg";
 			var file_name = url.split('/').pop().split('#')[0].split('?')[0];
 			var extension = url.substr((url.lastIndexOf('.') +1));
 			var getAbsoluteUrl = function(url) {
@@ -226,7 +227,7 @@ Lightshot — бесплатная и очень простая программ
 		</p>
 		<p>
 		<span class="r_button_small">
-			<a class="file_link" rel="nofollow">загрузить</a>
+			<a class="file_link" rel="nofollow" download>загрузить</a>
 		</span>
 		<span class="r_button_small">
 			<script>
@@ -235,7 +236,7 @@ Lightshot — бесплатная и очень простая программ
 		</span>
 		</p>
 		<script>
-			var url = new URL("https://github.com/sziberov/eks.ru/raw/master/software/000002/setup-lightshot.exe");
+			var url = new URL("https://github.com/sziberov/eks.ru/raw/master/get/000002/setup-lightshot.exe");
 			var host = url.hostname.replace("www.", "");
 			var getAbsoluteUrl = function(url) {
 			  var a = document.createElement('a');

@@ -14,7 +14,7 @@ $(function() {
 		autoPlaceholder: true,
 		nationalMode: false,
         preferredCountries: ['ua', 'ru', 'by', 'cz'],
-        utilsScript: "/express_send/js/utils.js"
+        utilsScript: "./js/utils.js"
      };
 
 	jq_fox_exp_phone.intlTelInput(conf_inpt_tel);
