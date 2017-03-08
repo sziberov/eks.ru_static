@@ -91,23 +91,9 @@ document.write('<div id="fox_header">');
     </div>
 </div>
 
-<div style="width:960px; margin:0 auto; overflow:auto; font-size: 18px; text-align: justify; padding-top: 32px;" id="fox_google_apps">
-	<div class="fox_h">Сервисы Google</div><br>
-	<table width="100%" border="0" cellpadding="0" cellspacing="8" class="include_1"><tbody>
-		<td align="center" valign="center"><a href="http://google.com"><img src="./i/google_apps/search.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://google.com"><b>Поиск</b></a></td>
-		<td align="center" valign="center"><a href="http://maps.google.com"><img src="./i/google_apps/maps.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://maps.google.com"><b>Карты</b></a></td>
-		<td align="center" valign="center"><a href="http://youtube.com"><img src="./i/google_apps/youtube.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://youtube.com"><b>YouTube</b></a></td>
-		<td align="center" valign="center"><a href="http://play.google.com"><img src="./i/google_apps/play.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://play.google.com"><b>Play</b></a></td>
-		<td align="center" valign="center"><a href="http://news.google.com"><img src="./i/google_apps/news.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://news.google.com"><b>Новости</b></a></td>
-		<td align="center" valign="center"><a href="http://gmail.com"><img src="./i/google_apps/mail.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://gmail.com"><b>Почта</b></a></td>
-		<td align="center" valign="center"><a href="http://drive.google.com"><img src="./i/google_apps/drive.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://drive.google.com"><b>Drive</b></a></td>
-		<td align="center" valign="center"><a href="http://translate.google.com"><img src="./i/google_apps/translate.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://translate.google.com"><b>Переводчик</b></a></td>
-	</tbody></table>
-</div>
+<div id="fox_body" style="width:964px; margin:0 auto; overflow:auto;">
 
-<div style="width:960px; margin:0 auto; overflow:auto;" id="fox_announcement">
-	<div style="font-size: 18px; text-align: justify; padding-top: 32px;">
-
+	<div id="fox_announcement" style="width:575px; float: left; font-size: 18px; text-align: justify; padding-top: 32px;">
 		<b>Уважаемые посетители EKS.RU,</b>
 		<p>По всей видимости решение использовать <a href="http://www.ucoz.ru/">uCoz</a> или <a href="https://mega.nz/">mega.nz</a> для хостинга файлов было в корне ошибочным. В итоге на их место встал <a href="https://github.com/">GitHub</a>.</p>
 		<b>Source-код всего сайта.</b>
@@ -158,9 +144,127 @@ document.write('<div id="fox_header">');
 		<p><b>EX.UA никогда не сойдет с позиций уважения законов Украины, и поэтому ресурс принял решение просто прекратить свою работу.</b> Мы просим всех пользователей изъять файлы из своих архивов на EX.UA до 30.11.2016. Также уведомляем пользователей mail.ex.ua, что данный сервис будет в ближайшее время перенесен на новый домен.</p>
 		<p>PS: Самая темная ночь – перед рассветом. Возможно, нашему рынку снова стоит вернуться к бесконтрольному торрент-пиратству, чтобы правообладатели осознали, что, не предоставив зрителям возможность легально получать контент, они не могут запрещать.</p>
 		-->
-
 	</div>
+
+	<div class="google-services">
+		<b>Сервисы Google</b>
+		<div id="google-services">
+			<div class="watch" data-category="0">
+				<ul id="ti">
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://google.com">
+							<div class="im" style="background: url(./i/google_apps/search.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://google.com">Поиск</a>
+							<p>Крупнейшая поисковая система интернета. Основной продукт Google.</p>
+							<span class="tm">google.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://images.google.com">
+							<div class="im" style="background: url(./i/google_apps/images.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://images.google.com">Картинки</a>
+							<p>Картинки Google. Все картинки Интернета.</p>
+							<span class="tm">images.google.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://maps.google.com">
+							<div class="im" style="background: url(./i/google_apps/maps.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://google.com">Карты</a>
+							<p>Найти информацию о местных компаниях, посмотреть карты и получить указания о маршруте в Картах Google.</p>
+							<span class="tm">maps.google.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://youtube.com">
+							<div class="im" style="background: url(./i/google_apps/youtube.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://youtube.com">YouTube</a>
+							<p>Видеохостинг, предоставляющий пользователям услуги хранения, доставки, показа и монетизации видео.</p>
+							<span class="tm">youtube.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://play.google.com">
+							<div class="im" style="background: url(./i/google_apps/play.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://play.google.com">Play</a>
+							<p>Миллионы приложений, игр, музыкальных треков, фильмов, книг и журналов, а также другие интересные материалы ждут вас.</p>
+							<span class="tm">play.google.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://news.google.com">
+							<div class="im" style="background: url(./i/google_apps/news.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://news.google.com">Новости</a>
+							<p>Исчерпывающая и актуальная информация, собранная службой "Новости Google" со всего света.</p>
+							<span class="tm">news.google.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://gmail.com">
+							<div class="im" style="background: url(./i/google_apps/mail.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://gmail.com">Почта</a>
+							<p>Почта Gmail – это удобный интерфейс, меньше спама и 15 ГБ пространства для писем и файлов.</p>
+							<span class="tm">gmail.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://drive.google.com">
+							<div class="im" style="background: url(./i/google_apps/drive.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://drive.google.com">Диск</a>
+							<p>Храните фотографии, видеоролики, документы и другие файлы на Google Диске – они будут доступны вам в любой точке мира.</p>
+							<span class="tm">drive.google.com</span>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" rel="noopener noreferrer" href="http://translate.google.com">
+							<div class="im" style="background: url(./i/google_apps/translate.png) center center /cover no-repeat"></div>
+						</a>
+						<div class="of">
+							<a target="_blank" rel="noopener noreferrer" href="http://translate.google.com">Переводчик</a>
+							<p>Бесплатный сервис Google позволяет мгновенно переводить слова, фразы и веб-страницы с английского на более чем 100 языков и обратно.</p>
+							<span class="tm">translate.google.com</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
 </div>
+
+
+<!--
+<div style="width:960px; margin:0 auto; overflow:auto; font-size: 18px; text-align: justify; padding-top: 32px;" id="fox_google_apps">
+	<div class="fox_h">Сервисы Google</div><br>
+	<table width="100%" border="0" cellpadding="0" cellspacing="8" class="include_1"><tbody>
+		<td align="center" valign="center"><a href="http://google.com"><img src="./i/google_apps/search.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://google.com"><b>Поиск</b></a></td>
+		<td align="center" valign="center"><a href="http://maps.google.com"><img src="./i/google_apps/maps.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://maps.google.com"><b>Карты</b></a></td>
+		<td align="center" valign="center"><a href="http://youtube.com"><img src="./i/google_apps/youtube.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://youtube.com"><b>YouTube</b></a></td>
+		<td align="center" valign="center"><a href="http://play.google.com"><img src="./i/google_apps/play.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://play.google.com"><b>Play</b></a></td>
+		<td align="center" valign="center"><a href="http://news.google.com"><img src="./i/google_apps/news.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://google-services.google.com"><b>Новости</b></a></td>
+		<td align="center" valign="center"><a href="http://gmail.com"><img src="./i/google_apps/mail.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://gmail.com"><b>Почта</b></a></td>
+		<td align="center" valign="center"><a href="http://drive.google.com"><img src="./i/google_apps/drive.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://drive.google.com"><b>Drive</b></a></td>
+		<td align="center" valign="center"><a href="http://translate.google.com"><img src="./i/google_apps/translate.png" style="max-height: 64px; max-width: 64px;" border="0"></a><p><a href="http://translate.google.com"><b>Переводчик</b></a></td>
+	</tbody></table>
+</div>
+-->
+
 
 </td></tr>
 <tr><td valign="bottom" height="32">

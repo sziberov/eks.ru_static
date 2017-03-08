@@ -205,31 +205,33 @@ input[type="text"].ex:disabled {background-color: #ebebeb;}
 .link_body div a {float:left;width:150px;color:#008;margin-right:5px;text-align:left;font-size:14px;padding-bottom:1px;}
 
 .news {float:left;overflow:auto;margin-top:32px;text-align:left;font-size:14px;line-height:21px;color:#474e51;min-height: 600px;}
+.google-services {overflow:auto;margin:32px 0 0;text-align:left;font-size:14px;line-height:21px;color:#474e51;width:350px;float:right;}
 
 #news {font:13px 'Tahoma',sans-serif;letter-spacing:.5px;line-height:1;margin:0;padding:0 0 50px 0;margin-top:6px;}
-#news a{text-decoration:none;color:#000}
-#news a:hover{text-decoration:underline}
-#news ul,ul>li{list-style-type:none;margin:5px 0 0 0;padding:0}
+#google-services {font:13px 'Tahoma',sans-serif;letter-spacing:.5px;line-height:1;margin:0;padding:0 0 50px 0;margin-top:12px;}
+#news, #google-services a{text-decoration:none;color:#000}
+#news, #google-services a:hover{text-decoration:underline}
+#news, #google-services ul,ul>li{list-style-type:none;margin:5px 0 0 0;padding:0}
 
-#news .watch{margin-top:5px}
-#news .top{background-color:#e6e6e6;overflow:hidden}
-#news .top li{float:left;margin:0;padding:9px 6px 7px;color:#464646;border-bottom-width:3px;border-bottom-color:transparent;border-bottom-style:solid}
-#news .top li.active{color:#000;border-bottom-color:#ccc}
-#news .top span{cursor:pointer}
-#news .tm{color:#a8a8a8;margin-right:6px;}
-#news .of{overflow:hidden;text-overflow:ellipsis;display:block}
+#news, #google-services .watch{margin-top:5px}
+#news, #google-services .top{background-color:#e6e6e6;overflow:hidden}
+#news, #google-services .top li{float:left;margin:0;padding:9px 6px 7px;color:#464646;border-bottom-width:3px;border-bottom-color:transparent;border-bottom-style:solid}
+#news, #google-services .top li.active{color:#000;border-bottom-color:#ccc}
+#news, #google-services .top span{cursor:pointer}
+#news, #google-services .tm{color:#a8a8a8;margin-right:6px;}
+#news, #google-services .of{overflow:hidden;text-overflow:ellipsis;display:block}
 
-#news #ti li{line-height:35px;height:35px;padding:0 6px;border-bottom:1px dashed #e6e6e6}
-#news #ti .of{white-space:nowrap}
+#news, #google-services #ti li{line-height:35px;height:35px;padding:0 6px;border-bottom:1px dashed #e6e6e6}
+#news, #google-services #ti .of{white-space:nowrap}
 
-#news #tf{margin:0;min-height:72px;position:relative;border-bottom:1px dashed #e6e6e6}
-#news #tf .of{line-height:15px;max-height:30px}
-#news #tf li{width:100%;position:absolute;top:0;left:0}
-#news #tf .im{font-size:0;width:72px;position:absolute;top:7px;left:5px}
-#news #tf .im img{width:72px;border-radius:3px}
-#news #tf .txt{padding:0 10px 0 85px}
-#news #tf .txt p{margin-top:7px}
-#news #tf .title{font-size:14px;margin:-10px 0 5px 0}
+#news, #google-services #tf{margin:0;min-height:72px;position:relative;border-bottom:1px dashed #e6e6e6}
+#news, #google-services #tf .of{line-height:15px;max-height:30px}
+#news, #google-services #tf li{width:100%;position:absolute;top:0;left:0}
+#news, #google-services #tf .im{font-size:0;width:72px;position:absolute;top:7px;left:5px}
+#news, #google-services #tf .im img{width:72px;border-radius:3px}
+#news, #google-services #tf .txt{padding:0 10px 0 85px}
+#news, #google-services #tf .txt p{margin-top:7px}
+#news, #google-services #tf .title{font-size:14px;margin:-10px 0 5px 0}
 
 body > table {
 	display: table;
@@ -301,7 +303,7 @@ body > table {
 	background: url(../i/search-yellow.png) 0px 0px no-repeat;
 }
 
-#news {
+#news, #google-services {
 	position: relative;
 }
 #news #ti .of {
@@ -311,7 +313,14 @@ body > table {
 	line-height: 16px;
 	font-size: 14px;
 }
-#news #ti .of a {
+#google-services #ti .of {
+	margin-left: 76px;
+	/*height: 64px;*/
+	overflow: hidden;
+	line-height: 16px;
+	font-size: 14px;
+}
+#news, #google-services #ti .of a {
 	display: block;
 	max-height: 32px;
 	overflow: hidden;
@@ -320,7 +329,7 @@ body > table {
 	font-weight: bold;
 	text-decoration: none;
 }
-#news #ti .of a:hover {
+#news, #google-services #ti .of a:hover {
 	color: #003ba8;
 }
 #news #ti .of p {
@@ -333,13 +342,22 @@ body > table {
 	overflow: hidden;
 	color: #464646;
 }
-#news #ti li {
+#google-services #ti .of p {
+	margin: 7px 0 0;
+	padding: 0;
+	white-space: normal;
+	font-size: 12px;
+	line-height: 15px;
+	overflow: hidden;
+	color: #464646;
+}
+#news, #google-services #ti li {
 	height: auto;
 	overflow: auto;
 	padding: 10px 0;
 	transform: translateZ(0);
 }
-#news #ti li.pro {
+#news, #google-services #ti li.pro {
 	border-bottom: 2px solid #e6e6e6;
 }
 #news #ti .im {
@@ -349,22 +367,28 @@ body > table {
 	float: left;
 	position: relative;
 }
-#news #ti .im img {
+#google-services #ti .im {
+	width: 64px;
+	height: 64px;
+	float: left;
+	position: relative;
+}
+#news, #google-services #ti .im img {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	margin: -21px 0 0 -21px;
 }
-#news .tm {
+#news, #google-services .tm {
 	font-size: 11px;
 }
 
-#news .top {
+#news, #google-services .top {
 	background-color: transparent;
 	overflow: hidden;
 	height: 31px;
 }
-#news .top li {
+#news, #google-services .top li {
 	margin-bottom: -2px;
 	border-bottom-width: 2px;
 	line-height: 0;
@@ -372,18 +396,18 @@ body > table {
 	color: #898989;
 	cursor: pointer;
 }
-#news .top li span {
+#news, #google-services .top li span {
 	font-size: 14px;
 	border-bottom: 1px dotted #b6b9ba;
 }
-#news .top li.active {
+#news, #google-services .top li.active {
 	border-bottom-color: #2e3638;
 	color: #2e3638;
 }
-#news .top li.active span {
+#news, #google-services .top li.active span {
 	border-bottom: 0 none;
 }
-#news div.mlist {
+#news, #google-services div.mlist {
 	position: absolute;
 	min-width: 30px;
 	right: 0;
@@ -395,22 +419,22 @@ body > table {
 	border: 1px solid #dfe4e7;
 	display: none;
 }
-#news div.mlist li {
+#news, #google-services div.mlist li {
 	list-style-type: none;
 	margin-bottom: 8px;
 	font-size: 14px;
 	color: #898989;
 	cursor: pointer;
 }
-#news div.mlist span {
+#news, #google-services div.mlist span {
 	border-bottom: 0 none;
 	border-bottom: 1px dotted #b6b9ba;
 }
-#news div.mlist li.active span {
+#news, #google-services div.mlist li.active span {
 	border-bottom: 0 none;
 	color: #2e3638;
 }
-#news div.more {
+#news, #google-services div.more {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -425,10 +449,10 @@ body > table {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-#news div.more span {
+#news, #google-services div.more span {
 	border-bottom: 1px dotted #b6b9ba;
 }
-#news div.more i {
+#news, #google-services div.more i {
 	display: block;
 	height: 0;
 	width: 0;
@@ -441,17 +465,17 @@ body > table {
 	right: 0;
 }
 
-#news div.more.active + div.mlist {
+#news, #google-services div.more.active + div.mlist {
 	display: block;
 }
 
-#news .watch {
+#news, #google-services .watch {
 	padding-top: 5px;
 	margin-top: -2px;
 	border-top: 2px solid #dfe4e7;
 }
 
-#news .top {
+#news, #google-services .top {
 	width: 500px;
 }
 
@@ -842,7 +866,7 @@ td ol>br {
 }
 
 
-.news-bottom-note {
+.news, .google-services-bottom-note {
 	color: #898989;
     background: #ebebeb;
     font-size: 11px;
