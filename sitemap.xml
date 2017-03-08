@@ -24,18 +24,27 @@
   <loc>http://eks.my1.ru/search.html</loc>
 </url>
 <url>
-  <loc>http://eks.my1.ru/software/index.html</loc>
+  <loc>http://eks.my1.ru/software.html</loc>
 </url>
 <url>
-  <loc>http://eks.my1.ru/software/000001.html</loc>
+  <loc>http://eks.my1.ru/show/000001.html</loc>
 </url>
 <url>
-  <loc>http://eks.my1.ru/software/000002.html</loc>
+  <loc>http://eks.my1.ru/show/000002.html</loc>
 </url>
 <url>
-  <loc>http://eks.my1.ru/software/000003.html</loc>
+  <loc>http://eks.my1.ru/show/000003.html</loc>
 </url>
 <url>
-  <loc>http://eks.my1.ru/software/000004.html</loc>
+  <loc>http://eks.my1.ru/show/000004.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/show/000005.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/show/000006.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/show/000007.html</loc>
 </url>
 </urlset>
