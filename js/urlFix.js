@@ -6,7 +6,7 @@
 
 function urlFix() {
 	var link = window.location.href;
-	link.split('.html')[0];
+	link.slice(0, -5);
 	window.history.replaceState( null, null, link );
 };
 
