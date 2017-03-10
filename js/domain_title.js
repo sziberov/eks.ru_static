@@ -1,5 +1,5 @@
 /*
-** domainTitle.js
+** domain_title.js
 **
 ** (c) kayover
 */
