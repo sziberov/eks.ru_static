@@ -1,5 +1,5 @@
 /*
-** fileCount.js
+** file_count.js
 **
 ** (c) kayover
 */

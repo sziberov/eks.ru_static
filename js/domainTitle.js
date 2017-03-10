@@ -4,14 +4,20 @@
 ** (c) kayover
 */
 
+var at = " @ "
+var domain = "EKS.RU"
+var dash = " - "
+var software = "Программы"
+
 if (document.title == '') {
-	document.title += "EKS.RU";
+	document.title += domain;
 }
 else {
-	if (document.getElementById("domain-software")) {
-		document.title += " - Программы @ EKS.RU";
+	if (document.getElementById("domain_software")) {
+		document.title += dash + software + at + domain;
+		document.getElementById("domain_software").removeAttribute("id"); 
 	}
 	else {
-		document.title += " @ EKS.RU";
+		document.title += at + domain;
 	}
 }

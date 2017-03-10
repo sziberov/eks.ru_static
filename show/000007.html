@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html id="domain_software"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
 <title>Notepad++ 7.3.2 + 64bit</title>
@@ -8,7 +8,6 @@
 <meta name="robots" content="nofollow">
 
 <meta http-equiv="content-language" content="ru">
-<div id="domain-software"></div>
 <script src="../js/domainTitle.js" charset="utf-8" type="text/javascript"></script>
 <script src="../js/request.js" charset="utf-8" type="text/javascript"></script>
 <script src="../js/swfobject.js"></script>
@@ -26,6 +25,7 @@
 <script src="../js/concat.js"></script>
 <script src="../js/clipboard.min.js"></script>
 <link href="../css/express_send.css" type="text/css" rel="stylesheet">
+<script src="../js/arr_btns.js" charset="utf-8" type="text/javascript"></script>
 <script src="http://vk.com/js/api/share.js?90" charset="windows-1251" type="text/javascript"></script>
 <script type="text/javascript">
 if (window.devicePixelRatio) document.cookie = 'udpr=' + window.devicePixelRatio + ';path=/';
@@ -40,18 +40,20 @@ if (window.devicePixelRatio) document.cookie = 'udpr=' + window.devicePixelRatio
 
 <body onload="initBody()">
 <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-<tr><td valign="top" style="height: 29px;">
-<script>
-$.get("./header.html", function(data){
-    $("#fox_header").replaceWith(data);
-});
-
-document.write('<div id="fox_header">');
-</script>
+<tr><td valign="top" style="height: 28px;">
+<script src="../js/header.js" charset="utf-8" type="text/javascript"></script>
 </td></tr>
 <tr><td valign="top" style="padding: 16px;" id="body_element">
 
-<div class="note_wr" id="fox_note"><div class="notify_bl">Ссылка скопирована в буфер обмена!</div></div>
+<div class="note_wr" id="fox_note"><div class="notify_bl">Ссылка скопирована в буфер обмена!</div></div>	
+
+<a href="../software.html"><h2>Программы</h2></a>
+
+<p id="arr_btns">
+	&nbsp;
+	<span class="small">←&nbsp;Ctrl&nbsp;→</span>
+	&nbsp;
+</p>
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top">
 <img alt="Notepad++ 7.3.2 + 64bit" src="../get/000007/Notepad_plus_plus.png" id="poster" style="margin: 0 16px 8px 0;" title="Notepad++ 7.3.2 + 64bit" align="left" border="0">
@@ -325,7 +327,7 @@ Notepad++ обеспечивает возможность одновременн
 </tbody></table>
 <span class="small">Некоторые из ссылок представленных выше могут вести на сторонний ресурс, это необходимо для экономии места на основном хостинге.</span>
 
-<script src="../js/fileCount.js"></script>
+<script src="../js/file_count.js"></script>
 
 <p>
 </p>
@@ -358,10 +360,10 @@ Notepad++ обеспечивает возможность одновременн
 <tr><td valign="bottom" height="32">
 <script>
 $.get("./footer.html", function(data){
-    $("#fox_footer").replaceWith(data);
+    $("#footer").replaceWith(data);
 });
 
-document.write('<div id="fox_footer">');
+document.write('<div id="footer">');
 </script>
 </td></tr>
 </tbody></table>

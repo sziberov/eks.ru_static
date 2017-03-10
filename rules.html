@@ -24,19 +24,13 @@ if (window.top != window.self) window.top.location = window.self.location;
 
 <body onload="initBody()">
 <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-<tr><td valign="top" style="height: 29px;">
-<script>
-$.get("./header.html", function(data){
-    $("#fox_header").replaceWith(data);
-});
-
-document.write('<div id="fox_header">');
-</script>
+<tr><td valign="top" style="height: 28px;">
+<script src="./js/header.js" charset="utf-8" type="text/javascript"></script>
 </td></tr>
 <tr><td valign="top" style="padding: 16px;" id="body_element">
 
 <h1>Правила ресурса</h1><p>
-Настоящие Правила созданы с целью упорядочивания общения на ресурсе ex.ru. Правила являются обязательными для исполнения всеми пользователями ресурса.</p><p>
+Настоящие Правила созданы с целью упорядочивания общения на ресурсе eks.ru. Правила являются обязательными для исполнения всеми пользователями ресурса.</p><p>
 
 <b>1. Регистрация</b></p><p>
 
@@ -137,13 +131,7 @@ document.write('<div id="fox_header">');
 
 </td></tr>
 <tr><td valign="bottom" height="32">
-<script>
-$.get("./footer.html", function(data){
-    $("#fox_footer").replaceWith(data);
-});
-
-document.write('<div id="fox_footer">');
-</script>
+<script src="./js/footer.js" charset="utf-8" type="text/javascript"></script>
 </td></tr>
 </tbody></table>
 </body></html>
