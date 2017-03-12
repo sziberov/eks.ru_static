@@ -12,10 +12,10 @@ var url = window.location.pathname;
 var filename = url.substring(url.lastIndexOf('/')+1);
 var name = filename.split('.html')[0];
 
-var left = parseInt(name) - parseInt(1);
+var left = parseInt(name) + parseInt(1);
 var leftPage = numberFormat(left, 6);
 
-var right = parseInt(name) + parseInt(1);
+var right = parseInt(name) - parseInt(1);
 var rightPage = numberFormat(right, 6);
 	
 $.ajax({
