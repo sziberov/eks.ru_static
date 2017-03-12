@@ -9,6 +9,6 @@ $.ajaxPrefilter(function( options, original_Options, jqXHR ) {
 });
 document.write('<div id="header">');
 
-$.get("./header_404.html", function(data){
+$.get("http://eks.my1.ru/header_404.html", function(data){
 	$("#header").replaceWith(data);
 });

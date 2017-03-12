@@ -6,6 +6,6 @@
 
 document.write('<div id="footer">');
 
-$.get("./footer_404.html", function(data){
+$.get("http://eks.my1.ru/footer_404.html", function(data){
 	$("#footer").replaceWith(data);
 });
