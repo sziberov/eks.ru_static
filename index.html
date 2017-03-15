@@ -75,7 +75,7 @@ if (window.top != window.self) window.top.location = window.self.location;
         	<div class="fox_desc">Если вам известен номер объекта, вы можете перейти к нему заполнив поле ниже.</div>
 			
 			<div style="overflow: visible; float: right;">
-				<input id="key" type="text" value="" class="ex" autocomplete="off" placeholder="123456" maxlength="6" style="text-align:right">
+				<input id="key" type="text" value="" class="ex" autocomplete="off" placeholder="123456" maxlength="6" style="text-align:left">
 				<button id="getButton" onclick="getNumber()" class="button ex" style="border-radius:0 3px 3px 0; float: left; width: 97px;">получить</button>
 			</div>
 			<span id="fox_err_1">Не введен номер объекта</span>
@@ -88,10 +88,38 @@ if (window.top != window.self) window.top.location = window.self.location;
 
 	<div id="fox_announcement" style="width:575px; float: left; font-size: 18px; text-align: justify; padding-top: 32px;">
 		<b>Уважаемые посетители EKS.RU,</b>
-		<p>По всей видимости решение использовать <a href="http://www.ucoz.ru/">uCoz</a> или <a href="https://mega.nz/">mega.nz</a> для хостинга файлов было в корне ошибочным. В итоге на их место встал <a href="https://github.com/">GitHub</a>.</p>
-		<b>Source-код всего сайта.</b>
-		<p>Так как мы теперь используем GitHub, вы можете при желании посмотреть его перейдя по <a href="https://github.com/sziberov/EKS.RU">ссылке</a>. И там же Вы можете предлагать свои доработки кода, или идеи.</p>
-
+		<p>
+			По всей видимости решение использовать <a href="http://www.ucoz.ru/">uCoz</a> или <a href="https://mega.nz/">mega.nz</a> для хостинга файлов было в корне ошибочным. В итоге на их место встал <a href="https://github.com/">GitHub</a>.
+		</p>
+		<p>
+			Он предоставляет:
+		</p>
+		<ul>
+			<li style="list-style-type: circle;">100mb для каждого отдельного файла;</li>
+			<li style="list-style-type: circle;">Неограниченное простанство в общем;</li>
+			<li style="list-style-type: circle;">Прямые ссылки на файлы;</li>
+		</ul>
+		<p>
+			А uCoz:
+		</p>
+		<ul>
+			<li style="list-style-type: circle;">Только 15mb для каждого отдельного файла;</li>
+			<li style="list-style-type: circle;">Постоянно, но очень медленно, растущие 400mb;</li>
+			<li style="list-style-type: circle;">Прямые ссылки на файлы;</li>
+		</ul>
+		<p>
+			И Mega:
+		</p>
+		<ul>
+			<li style="list-style-type: circle;">Ограниченный только свободным местом размер одного файла;</li>
+			<li style="list-style-type: circle;">50gb, расширяемые платно;</li>
+			<li style="list-style-type: circle;">НЕ прямые ссылки на файлы;</li>
+		</ul>
+		<p>
+			<b>Source-код всего сайта.</b><br>
+			Так как мы теперь используем GitHub, вы можете при желании посмотреть его перейдя по <a href="https://github.com/sziberov/eks.ru">ссылке</a>. И там же Вы можете предлагать свои доработки кода, или идеи.
+		</p>
+			
 		<!--
 		<b>Уважаемые посетители EKS.RU,</b>
 		<p>В данный момент есть определенные трудности со скачиванием .exe и .zip файлов. Dropbox по всей видимости не терпит такого отношения к себе и нагло блокирует доступ к пиратским архивам, а так же говорит что привышен трафик. Я не знаю как это возможно, так как EKS.RU на мой взгляд достаточно малоизвестный сайт, что бы кто то мог привысить ограничение в 20ГБ и 100 000 переходов.</p>
