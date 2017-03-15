@@ -9,21 +9,6 @@
   <loc>http://eks.my1.ru/index.html</loc>
 </url>
 <url>
-  <loc>http://eks.my1.ru/about.html</loc>
-</url>
-<url>
-  <loc>http://eks.my1.ru/contact.html</loc>
-</url>
-<url>
-  <loc>http://eks.my1.ru/copyright.html</loc>
-</url>
-<url>
-  <loc>http://eks.my1.ru/rules.html</loc>
-</url>
-<url>
-  <loc>http://eks.my1.ru/search.html</loc>
-</url>
-<url>
   <loc>http://eks.my1.ru/software.html</loc>
 </url>
 <url>
@@ -46,5 +31,11 @@
 </url>
 <url>
   <loc>http://eks.my1.ru/show/000007.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/show/000008.html</loc>
+</url>
+<url>
+  <loc>http://eks.my1.ru/show/000009.html</loc>
 </url>
 </urlset>
